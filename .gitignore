@@ -1,0 +1,22 @@
+# virtual envs
+.venv/
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# build
+build/
+dist/
+*.egg-info/
+
+# IDE/OS
+.idea/
+.vscode/
+.DS_Store
+
+# misc
+.ruff_cache/
+.asciinema/

@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "labyrinth"
+version = "0.1.0"
+description = "Текстовый квест \"Лабиринт сокровищ\" для учебного проекта"
+authors = ["Kirill Lozo <lozo-kirill@yandex.ru>"]
+readme = "README.md"
+package-mode = false  # используем файлы в корне
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.9"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+select = ["E", "F", "I", "UP"]
+ignore = ["E203", "E501"]  # E501 перекрывается line-length
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+
+[tool.poetry.scripts]
+labyrinth = "main:main"
